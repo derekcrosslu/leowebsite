@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { InstagramIcon } from 'lucide-react';
 
 interface VideoPageProps {
@@ -79,12 +80,17 @@ export function VideoPage({
         <h2 className='text-2xl font-semibold mb-4'>Frames</h2>
         <div className='grid grid-cols-2 md:grid-cols-4 gap-4'>
           {frames.map((frame, index) => (
-            <img
+            <div
               key={index}
-              src={frame}
-              alt={`Frame ${index + 1}`}
-              className='w-full h-auto'
-            />
+              className='relative aspect-video'
+            >
+              <Image
+                src={frame}
+                alt={`Frame ${index + 1}`}
+                layout='fill'
+                objectFit='cover'
+              />
+            </div>
           ))}
         </div>
       </main>

@@ -39,9 +39,9 @@ export default function AboutPage() {
           </p>
           <p>
             Having worked on a diverse range of projects from short films to
-            feature-length documentaries, Leonardo's work has been recognized at
-            international film festivals and has garnered critical acclaim for
-            its artistic vision and technical excellence.
+            feature-length documentaries, Leonardo&apos;s work has been
+            recognized at international film festivals and has garnered critical
+            acclaim for its artistic vision and technical excellence.
           </p>
           <p>
             When not behind the camera, Leonardo can be found exploring new
