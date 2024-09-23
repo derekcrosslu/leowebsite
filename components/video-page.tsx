@@ -31,7 +31,8 @@ export function VideoPage({
             href='/'
             className='text-2xl font-bold hover:text-gray-300 transition-colors'
           >
-            LEONARDO CROSS
+            <span className='block sm:inline'>LEONARDO</span>{' '}
+            <span className='block sm:inline'>CROSS</span>
           </Link>
           <div className='flex items-center space-x-6'>
             <Link

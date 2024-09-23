@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { InstagramIcon } from 'lucide-react';
+import { MobileMenu } from './mobile-menu';
 
 const VimeoEmbed = ({ videoId }: { videoId: string }) => (
   <Link
@@ -47,20 +48,20 @@ export function FilmmakerWebsiteComponent() {
         <nav className='container mx-auto px-4 py-4 flex justify-between items-center'>
           <Link
             href='/'
-            className=' font-bold hover:text-gray-300 transition-colors text-blue-300'
+            className='text-xl text-blue-300  hover:text-gray-300 transition-colors'
           >
-            L E O N A R D O &nbsp; C R O S S
+            LEONARDO CROSS
           </Link>
-          <div className='flex items-center space-x-6'>
+          <div className='hidden sm:flex items-center space-x-6'>
             <Link
               href='/about'
-              className='hover:text-blue-300 transition-colors'
+              className='hover:text-gray-300 transition-colors'
             >
               ABOUT
             </Link>
             <Link
               href='/contact'
-              className='hover:text-blue-300 transition-colors'
+              className='hover:text-gray-300 transition-colors'
             >
               CONTACT
             </Link>
@@ -69,9 +70,10 @@ export function FilmmakerWebsiteComponent() {
               target='_blank'
               rel='noopener noreferrer'
             >
-              <InstagramIcon className='w-6 h-6 hover:text-blue-300 transition-colors' />
+              <InstagramIcon className='w-6 h-6 hover:text-gray-300 transition-colors' />
             </Link>
           </div>
+          <MobileMenu />
         </nav>
       </header>
       <main className='container mx-auto px-4 pt-24 pb-12'>

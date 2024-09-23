@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import { InstagramIcon } from 'lucide-react';
 
 export default function ContactPage() {
   return (
@@ -10,7 +11,8 @@ export default function ContactPage() {
             href='/'
             className='text-2xl font-bold hover:text-gray-300 transition-colors'
           >
-            LEONARDO CROSS
+            <span className='block sm:inline'>LEONARDO</span>{' '}
+            <span className='block sm:inline'>CROSS</span>
           </Link>
           <div className='flex items-center space-x-6'>
             <Link
@@ -24,6 +26,13 @@ export default function ContactPage() {
               className='hover:text-gray-300 transition-colors'
             >
               ABOUT
+            </Link>
+            <Link
+              href='https://instagram.com/filmmaker'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <InstagramIcon className='w-6 h-6 hover:text-gray-300 transition-colors' />
             </Link>
           </div>
         </nav>
