@@ -31,7 +31,7 @@ export function MobileMenu() {
             CONTACT
           </Link>
           <Link
-            href='https://www.instagram.com/leocross__/'
+            href='https://www.instagram.com/'
             className='block px-4 py-2 text-white hover:bg-gray-800'
             target='_blank'
             rel='noopener noreferrer'

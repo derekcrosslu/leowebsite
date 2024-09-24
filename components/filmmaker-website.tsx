@@ -66,7 +66,7 @@ export function FilmmakerWebsiteComponent() {
               CONTACT
             </Link>
             <Link
-              href='https://www.instagram.com/leocross__/'
+              href='https://www.instagram.com/'
               target='_blank'
               rel='noopener noreferrer'
             >
