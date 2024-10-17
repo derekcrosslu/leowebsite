@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { InstagramIcon } from 'lucide-react';
 
 interface VideoPageProps {
@@ -17,8 +16,6 @@ export function VideoPage({
   title,
   description,
   credits,
-  frames,
-  backgroundColor,
 }: VideoPageProps) {
   return (
     <div
