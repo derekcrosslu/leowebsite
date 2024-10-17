@@ -23,7 +23,7 @@ export function VideoPage({
   return (
     <div
       className={`min-h-screen text-white`}
-      style={{ backgroundColor }}
+      // style={{ backgroundColor:black }}
     >
       <header className='fixed top-0 left-0 right-0 z-10 bg-black bg-opacity-50 backdrop-blur-md'>
         <nav className='container mx-auto px-4 py-4 flex justify-between items-center'>
@@ -52,7 +52,7 @@ export function VideoPage({
               target='_blank'
               rel='noopener noreferrer'
             >
-              <InstagramIcon className='w-6 h-6 hover:text-gray-300 transition-colors' />
+              <InstagramIcon className='w-6 h-6 hover:text-pink-500 transition-colors' />
             </Link>
           </div>
         </nav>
@@ -78,8 +78,8 @@ export function VideoPage({
             <p>{credits}</p>
           </div>
         </div>
-        <h2 className='text-2xl font-semibold mb-4'>Frames</h2>
-        <div className='grid grid-cols-2 md:grid-cols-4 gap-4'>
+        {/* <h2 className='text-2xl font-semibold mb-2'>Frames</h2> */}
+        {/* <div className='grid grid-cols-2 md:grid-cols-4 gap-2'>
           {frames.map((frame, index) => (
             <div
               key={index}
@@ -93,7 +93,7 @@ export function VideoPage({
               />
             </div>
           ))}
-        </div>
+        </div> */}
       </main>
     </div>
   );
