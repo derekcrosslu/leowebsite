@@ -115,6 +115,20 @@ export function FilmmakerWebsiteComponent() {
                 className='hover:opacity-30 transition-opacity'
               />
             </Link>
+            <Link
+              href='https://www.youtube.com/@leocross8578'
+              target='_blank'
+              rel='noopener noreferrer'
+              aria-label='Instagram'
+            >
+              <Image
+                src='/images/youtube-icon.svg'
+                alt='youtube'
+                width={28}
+                height={28}
+                className='hover:opacity-30 transition-opacity'
+              />
+            </Link>
           </div>
           <MobileMenu />
         </nav>

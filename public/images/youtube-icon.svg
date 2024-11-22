@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
+  <!-- Red background rectangle with rounded corners -->
+  <rect x="2" y="5" width="20" height="14" rx="4" fill="#ffffff"/>
+  
+  <!-- White play triangle -->
+  <path d="M16 12L10 15.464V8.536L16 12Z" fill="black"/>
+</svg>
