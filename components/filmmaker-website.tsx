@@ -102,7 +102,7 @@ export function FilmmakerWebsiteComponent() {
               CONTACT
             </Link>
             <Link
-              href='https://www.instagram.com/'
+              href='https://www.instagram.com/leonardo.cross/'
               target='_blank'
               rel='noopener noreferrer'
               aria-label='Instagram'
