@@ -86,7 +86,12 @@ export function FilmmakerWebsiteComponent() {
             className='text-xl text-white hover:text-pink-500 transition-colors'
             aria-label='Leonardo Cross Home'
           >
-            LEONARDO CROSS
+            <Image
+              src='/images/firma.svg'
+              alt='Leo'
+              width={200}
+              height={80}
+            />
           </Link>
           <div className='hidden sm:flex items-center space-x-6'>
             <Link
@@ -102,7 +107,7 @@ export function FilmmakerWebsiteComponent() {
               CONTACT
             </Link>
             <Link
-              href='https://www.instagram.com/leonardo.cross/'
+              href='https://www.instagram.com/leocross__/'
               target='_blank'
               rel='noopener noreferrer'
               aria-label='Instagram'
@@ -116,13 +121,13 @@ export function FilmmakerWebsiteComponent() {
               />
             </Link>
             <Link
-              href='https://www.youtube.com/@leocross8578'
+              href='https://vimeo.com/user92885025'
               target='_blank'
               rel='noopener noreferrer'
-              aria-label='Instagram'
+              aria-label='Vimeo'
             >
               <Image
-                src='/images/youtube-icon.svg'
+                src='/images/vimeo-icon.svg'
                 alt='youtube'
                 width={28}
                 height={28}

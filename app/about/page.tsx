@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { InstagramIcon } from 'lucide-react';
 
 export default function AboutPage() {
@@ -11,8 +12,12 @@ export default function AboutPage() {
             href='/'
             className='text-2xl font-bold hover:text-gray-300 transition-colors'
           >
-            <span className='block sm:inline'>LEONARDO</span>{' '}
-            <span className='block sm:inline'>CROSS</span>
+            <Image
+              src='/images/firma.svg'
+              alt='Leo'
+              width={200}
+              height={80}
+            />
           </Link>
           <div className='flex items-center space-x-6'>
             <Link
@@ -34,30 +39,49 @@ export default function AboutPage() {
             >
               <InstagramIcon className='w-6 h-6 hover:text-gray-300 transition-colors' />
             </Link>
+            <Link
+              href='https://vimeo.com/user92885025'
+              target='_blank'
+              rel='noopener noreferrer'
+              aria-label='Vimeo'
+            >
+              <Image
+                src='/images/vimeo-icon.svg'
+                alt='youtube'
+                width={28}
+                height={28}
+                className='hover:opacity-30 transition-opacity'
+              />
+            </Link>
           </div>
         </nav>
       </header>
-      <main className='container mx-auto px-4 pt-24 pb-12'>
-        <h1 className='text-4xl font-bold mb-8'>About Leonardo Cross</h1>
-        <div className='space-y-6'>
-          <p>
-            Leonardo Cross is a visionary filmmaker with a passion for
-            storytelling through the lens of a camera. With years of experience
-            in the industry, Leonardo has developed a unique style that blends
-            innovative cinematography with compelling narratives.
+      <main className='container mx-auto pt-36 pb-12 px-10'>
+        <div className='space-y-6 lg:flex md:space-x-6 md:space-y-0 '>
+          <p className='text-xl pr-20 pl-10 pt-10 pb-10'>
+            Leonardo Cross is a 22-year-old Peruvian-American filmmaker. Leo was
+            born in the US but moved to Peru as an infant. Leo demonstrated a
+            passion for filmmaking at a young age and made his first film at 12.
+            When Leo was 16, he left his family and friends behind and moved to
+            the US to study film at The High School of Art and Design in New
+            York City. He then did a 30-month program at Ghetto Film School,
+            where he wrote and directed the 2021 Thesis film, and also was a
+            directing fellow at Reel Works Media Makers. Leo won 1st place at
+            the ABC/Disney Get Reel With Your Dreams Competition for his public
+            service announcement addressing gun violence. In addition, he won
+            1st prize in a national filmmaking competition, Lights Camera Save!,
+            sponsored by the American Bankers Association for his public service
+            announcement encouraging teenagers to save money. He was featured in
+            the New York Post because of it and won a national Gold Medal at the
+            Scholastic Art Awards. Leo is currently a senior at Emerson College.
           </p>
-          <p>
-            Having worked on a diverse range of projects from short films to
-            feature-length documentaries, Leonardo&apos;s work has been
-            recognized at international film festivals and has garnered critical
-            acclaim for its artistic vision and technical excellence.
-          </p>
-          <p>
-            When not behind the camera, Leonardo can be found exploring new
-            locations for future projects, mentoring aspiring filmmakers, or
-            experimenting with cutting-edge film technologies to push the
-            boundaries of visual storytelling.
-          </p>
+          <Image
+            src='/images/about.jpeg'
+            alt='about leo'
+            width={280}
+            height={390}
+            className='w-full'
+          />
         </div>
       </main>
     </div>

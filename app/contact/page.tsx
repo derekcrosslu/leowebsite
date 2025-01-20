@@ -1,18 +1,22 @@
-import React from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { InstagramIcon } from 'lucide-react';
 
 export default function ContactPage() {
   return (
-    <div className='min-h-screen bg-black text-white'>
+    <div className='min-h-screen bg-black text-white flex flex-col items-center px-4 py-16'>
       <header className='fixed top-0 left-0 right-0 z-10 bg-black bg-opacity-50 backdrop-blur-md'>
         <nav className='container mx-auto px-4 py-4 flex justify-between items-center'>
           <Link
             href='/'
             className='text-2xl font-bold hover:text-gray-300 transition-colors'
           >
-            <span className='block sm:inline'>LEONARDO</span>{' '}
-            <span className='block sm:inline'>CROSS</span>
+            <Image
+              src='/images/firma.svg'
+              alt='Leo'
+              width={200}
+              height={80}
+            />
           </Link>
           <div className='flex items-center space-x-6'>
             <Link
@@ -34,79 +38,51 @@ export default function ContactPage() {
             >
               <InstagramIcon className='w-6 h-6 hover:text-gray-300 transition-colors' />
             </Link>
+            <Link
+              href='https://vimeo.com/user92885025'
+              target='_blank'
+              rel='noopener noreferrer'
+              aria-label='Vimeo'
+            >
+              <Image
+                src='/images/vimeo-icon.svg'
+                alt='youtube'
+                width={28}
+                height={28}
+                className='hover:opacity-30 transition-opacity'
+              />
+            </Link>
           </div>
         </nav>
       </header>
-      <main className='container mx-auto px-4 pt-24 pb-12'>
-        <h1 className='text-4xl font-bold mb-8'>Contact Leonardo Cross</h1>
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
-          <div>
-            <h2 className='text-2xl font-semibold mb-4'>Get in Touch</h2>
-            <p className='mb-4'>
-              For inquiries about projects, collaborations, or any other
-              questions, please don&apos;t hesitate to reach out.
-            </p>
-            <ul className='space-y-2'>
-              <li>Email: leonardo@example.com</li>
-              <li>Phone: +1 (555) 123-4567</li>
-              <li>Instagram: @leonardocross</li>
-            </ul>
-          </div>
-          <form className='space-y-4'>
-            <div>
-              <label
-                htmlFor='name'
-                className='block mb-1'
-              >
-                Name
-              </label>
-              <input
-                type='text'
-                id='name'
-                name='name'
-                className='w-full p-2 bg-gray-800 rounded'
-                required
-              />
-            </div>
-            <div>
-              <label
-                htmlFor='email'
-                className='block mb-1'
-              >
-                Email
-              </label>
-              <input
-                type='email'
-                id='email'
-                name='email'
-                className='w-full p-2 bg-gray-800 rounded'
-                required
-              />
-            </div>
-            <div>
-              <label
-                htmlFor='message'
-                className='block mb-1'
-              >
-                Message
-              </label>
-              <textarea
-                id='message'
-                name='message'
-                rows={4}
-                className='w-full p-2 bg-gray-800 rounded'
-                required
-              ></textarea>
-            </div>
-            <button
-              type='submit'
-              className='bg-white text-black px-4 py-2 rounded hover:bg-gray-300 transition-colors'
-            >
-              Send Message
-            </button>
-          </form>
+      <h1 className='text-4xl md:text-3xl font-light mb-24'>Contact</h1>
+
+      {/* Professional Info Section */}
+      <div className='space-y-4 mb-16 text-center'>
+        <p className='text-sm tracking-wider'>DIRECTOR / WRITER</p>
+        <a
+          href='mailto:DANGEVIRTZ@GMAIL.COM'
+          className='text-sm tracking-wider hover:opacity-80 transition-opacity'
+        >
+          LEO22CROSS@GMAIL.COM
+        </a>
+      </div>
+
+      {/* Image Section */}
+      <div className='w-full max-w-3xl mb-16'>
+        <div className='relative aspect-[16/10]'>
+          <Image
+            src='/images/leo.jpeg'
+            alt='Leonardo Cross '
+            fill
+            className='object-cover'
+            priority
+          />
         </div>
-      </main>
+      </div>
+
+      {/* Footer Text */}
+
     </div>
   );
 }
