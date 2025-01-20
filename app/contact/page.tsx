@@ -64,7 +64,7 @@ export default function ContactPage() {
           href='mailto:DANGEVIRTZ@GMAIL.COM'
           className='text-sm tracking-wider hover:opacity-80 transition-opacity'
         >
-          LEO22CROSS@GMAIL.COM
+          LEO02CROSS@GMAIL.COM
         </a>
       </div>
 
